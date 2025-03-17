@@ -1,0 +1,142 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Seasons&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #760000;
+    color: #E0AA84;
+    text-align: center;
+}
+
+header{
+    width:100%;
+    background-color: #E0AA84;
+    height: 200px;
+    border: 4px solid #AF4D1F;
+}
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Imagem do header */
+.header-img {
+    width:300px;
+    height: 200px;
+   
+    object-fit: cover;
+  
+}
+/* Imagem da professora */
+.profile-img {
+    width:300px;
+    height: 350px;
+   
+    object-fit: cover;
+  
+}
+
+/* Título principal */
+h1 {
+    font-family: 'The Seasons', serif;
+    font-size: 2rem;
+    color: #E0AA84;
+    margin-top: 10px;
+}
+
+/* Ícone do Instagram */
+.insta-link {
+ 
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.insta-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Produtos e Serviços */
+.services {
+    margin-top: 30px;
+}
+
+.services h2 {
+    font-size: 1.5rem;
+    color: #E0AA84;
+    border-bottom: 2px solid #E0AA84;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Cada serviço */
+.service-item {
+    display: flex;
+    align-items: center;
+    border: solid 2px #E0AA84;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.service-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.service-info h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #E0AA84;
+}
+
+/* Botão estilizado */
+.btn {
+    display: inline-block;
+    background-color: #AF4D1F;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #E0AA84;
+    color: #3E3F20;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-img {
+        margin-bottom: 10px;
+    }
+
+    .service-info {
+        text-align: center;
+    }
+}
